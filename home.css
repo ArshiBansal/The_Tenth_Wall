@@ -60,7 +60,8 @@
 
 /* About Us Section - Dark Beige Theme */
 .about-section {
-  background-color: #d8c7b8; /* Muted dark beige */
+  background-color: #d8c7b8;
+  /* Muted dark beige */
   color: #2e2e2e;
   max-height: 80vh;
   overflow: hidden;
@@ -103,7 +104,8 @@
 }
 
 .about-img {
-  height: 70vh;       /* Reduced from 85vh */
+  height: 70vh;
+  /* Reduced from 85vh */
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
@@ -114,6 +116,42 @@
     height: 50vh;
   }
 }
+
+.statistics-section {
+  background-color: #d8c7b8;
+}
+
+.statistics-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #3e2f23;
+}
+
+.statistics-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3e2f23;
+  margin-bottom: 0.5rem;
+}
+
+.statistics-section p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3e2f23;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .statistics-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .statistics-section p {
+    font-size: 0.95rem;
+  }
+}
+
+
 
 .services-section {
   background-color: #f5f0eb;
@@ -181,10 +219,12 @@ body {
 .services-section::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(101, 67, 33, 0.5); /* Brown blur */
+  background-color: rgba(101, 67, 33, 0.5);
+  /* Brown blur */
   backdrop-filter: blur(5px);
   z-index: 1;
 }
@@ -218,4 +258,261 @@ body {
 
 .service-card i {
   color: #4b3621;
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: #d8c7b8;
+  padding: 60px 20px;
+  font-family: 'Playfair Display', serif;
+  color: #2e2e2e;
+}
+
+.projects-section .section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3c2f2f;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Compressed Width Tile */
+.project-tile {
+  position: relative;
+  width: 180px;
+  /* Compressed width */
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: width 0.4s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-tile:hover {
+  width: 300px;
+  /* Expand on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-radius: 12px;
+}
+
+.project-tile:hover img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 36, 28, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.project-tile:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-overlay a {
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #2e2e2e;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.project-overlay a:hover {
+  background-color: #3c2f2f;
+  color: #fff;
+}
+
+.section-heading {
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+.process-step i {
+  color: #580F41; /* or any accent color */
+}
+
+/* Font & General Theme */
+.perfection-hero,
+.work-process {
+  background-color: #d8c7b8;
+  font-family: 'Playfair Display', serif;
+  color: #2c2c2c;
+}
+
+.text-highlight {
+  color: #d59e5c;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.perfection-hero .btn-custom {
+  background-color: #d59e5c;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.perfection-hero .btn-custom:hover {
+  background-color: #b47d3b;
+}
+
+/* Section colors and font */
+.work-process {
+  font-family: 'Playfair Display', serif;
+  color: #2c2c2c;
+}
+
+/* Highlighted section heading */
+.text-highlight {
+  color: #d59e5c;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Work Section Background */
+.work-process {
+  background-color: #d8c7b8;
+  font-family: 'Playfair Display', serif;
+  color: #2c2c2c;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Light Glow Overlay */
+.yellow-light-glow {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 300px;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 230, 150, 0.5) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Section Header */
+.text-highlight {
+  color: #d59e5c;
+  font-weight: 600;
+}
+
+/* Cards */
+.step-card {
+  background-color: #d8c7b8; /* same as section */
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Numbers */
+.step-number {
+  font-size: 2.6rem;
+  color: #d59e5c;
+  font-weight: bold;
+}
+
+/* Titles */
+.step-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonial-section {
+  font-family: 'Playfair Display', serif;
+  color: #2c2c2c;
+}
+
+.testimonial-box {
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #3e2f23;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 30px 30px;
+}
+
+.footer-section {
+  background-color: #523a28; /* Dark cocoa brown */
+  font-family: 'Playfair Display', serif;
+  color: #3e2f23;
+}
+
+.footer-link {
+  color: #3e2f23;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #3e2f23; /* Soft gold/beige hover */
+}
+
+.social-icon {
+  font-size: 1.3rem;
+  color: #3e2f23;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3e2f23;
 }
