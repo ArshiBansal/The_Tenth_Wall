@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  
+
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -19,119 +20,127 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar">
-  <div class="container">
-    <a class="navbar-brand font-weight-bold" href="#" style="font-family: 'Playfair Display', serif; font-size: 1.6rem;">The Tenth Wall</a>
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="#"
+        style="font-family: 'Playfair Display', serif; font-size: 1.6rem;">The Tenth Wall</a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">   
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
- <!-- Jumbotron + Curved Image Slider Combined -->
-<header class="jumbotron jumbotron-fluid hero-banner d-flex align-items-center mb-0" style="height: 95vh;">
-  <div class="container text-center text-white">
-    <h1 class="display-4 font-weight-bold">Design That Defines You</h1>
-    <p class="lead">Elevating spaces through thoughtful interiors. The Tenth Wall brings your vision to life—artfully and uniquely.</p>
-    <a href="#" class="btn btn-dark btn-lg mr-2">Find Services</a>
-    <a href="#" class="btn btn-outline-light btn-lg">How It Works</a>
-</header>
+  <!-- Jumbotron + Curved Image Slider Combined -->
+  <header class="jumbotron jumbotron-fluid hero-banner d-flex align-items-center mb-0" style="height: 95vh;">
+    <div class="container text-center text-white">
+      <h1 class="display-4 font-weight-bold">Design That Defines You</h1>
+      <p class="lead">Elevating spaces through thoughtful interiors. The Tenth Wall brings your vision to life—artfully
+        and uniquely.</p>
+      <a href="#" class="btn btn-dark btn-lg mr-2">Find Services</a>
+      <a href="#" class="btn btn-outline-light btn-lg">How It Works</a>
+  </header>
 
-<!-- About us-->
-<section id="who-we-are" class="py-5 bg-light">
-  <div class="container">
-    <div class="row align-items-center">
-      
-      <!-- Text Part -->
-      <div class="col-md-6 mb-4 mb-md-0">
-        <h2 class="font-weight-bold mb-3" style="font-family: 'Playfair Display', serif;">Who We Are</h2>
-        <p style="font-size: 1.1rem;">
-          The Tenth Wall is a creative interior design studio that turns ideas into beautiful, personalized spaces. 
-          We combine art, function, and passion to make every place truly feel like home.
-        </p>
+  <!-- About Us Section -->
+  <section class="about-section d-flex align-items-center" style="height: 80vh;">
+    <div class="container-fluid">
+      <div class="row align-items-center px-4">
+        <div class="col-1"></div>
+        <div class="col-5 mb-4 mb-sm-0">
+          <h2 class="section-heading mb-4">About The Tenth Wall</h2>
+          <p class="lead">We are more than interior designers—we’re curators of ambiance and creators of bespoke living
+            experiences.</p>
+          <p>With an eye for detail and a passion for aesthetics, we transform ordinary spaces into timeless reflections
+            of personality and purpose. Whether it's sleek modernism or luxurious classicism, every design is tailored
+            to elevate your lifestyle.</p>
+          <p>Rooted in both innovation and tradition, our approach combines functionality with finesse—ensuring your
+            space isn't just beautiful, but also deeply personal and practical.</p>
+          <a href="about.html" class="btn btn-dark-custom mt-3 mr-2">Know More</a>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 mb-4 mt-10 mb-sm-0">
+          <img src="https://i.pinimg.com/1200x/b8/0b/57/b80b5736871b6bbb8340f2365d32b4dd.jpg" alt="Interior Showcase"
+            class="img-fluid rounded shadow about-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Services Section -->
+<section class="services-section text-dark">
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-1"></div> <!-- Left spacing -->
+
+      <!-- Service Card 1 -->
+      <div class="col-2 px-2">
+        <div class="service-card text-center">
+          <i class="fas fa-couch fa-2x mb-3"></i>
+          <h4>Interior Design</h4>
+          <p>Stylish and functional interiors tailored to your lifestyle and preferences.</p>
+          <a href="#services" class="btn btn-outline-dark">View Services</a>
+        </div>
       </div>
 
-      <!-- Image or Icon Part -->
-      <div class="col-md-6 text-center">
-        <i class="fas fa-users fa-6x text-dark"></i>
-        <!-- Or use icon instead -->
-        <!-- <i class="fas fa-users fa-5x text-dark"></i> -->
+      <!-- Service Card 2 -->
+      <div class="col-2 px-2">
+        <div class="service-card text-center">
+          <i class="fas fa-lightbulb fa-2x mb-3"></i>
+          <h4>Lighting</h4>
+          <p>Transform spaces with ambient, task, and decorative lighting designs.</p>
+          <a href="#services" class="btn btn-outline-dark">View Services</a>
+        </div>
       </div>
+
+      <!-- Service Card 3 -->
+      <div class="col-2 px-2">
+        <div class="service-card text-center">
+          <i class="fas fa-tools fa-2x mb-3"></i>
+          <h4>Renovation & Remodeling</h4>
+          <p>Upgrade, modernize, or repurpose any space with our expert solutions.</p>
+          <a href="#services" class="btn btn-outline-dark">View Services</a>
+        </div>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="col-2 px-2">
+        <div class="service-card text-center">
+          <i class="fas fa-th-large fa-2x mb-3"></i>
+          <h4>Space Planning</h4>
+          <p>Efficient layout design to maximize utility and aesthetics of your space.</p>
+          <a href="#services" class="btn btn-outline-dark">View Services</a>
+        </div>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="col-2 px-2">
+        <div class="service-card text-center">
+          <i class="fas fa-comments fa-2x mb-3"></i>
+          <h4>Consultation</h4>
+          <p>Get expert advice and design direction before starting your project.</p>
+          <a href="#services" class="btn btn-outline-dark">View Services</a>
+        </div>
+      </div>
+
+      <div class="col-1"></div> <!-- Right spacing -->
     </div>
   </div>
 </section>
-<!-- Our Services Section -->
-<section id="our-services" class="py-5" style="background-color: #1e1e1e;">
-  <div class="container">
-    <div class="text-center mb-5">
-       <h2 class="font-weight-bold" style="font-family: 'Playfair Display', serif; color: #f1f1f1;">Our Services</h2>
-      <p class="text-muted">Crafting every corner with creativity, comfort, and class.</p>
-    </div>
-
-    <div class="row">
-      
-      <!-- Service 1 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm text-center">
-          <div class="card-body">
-            <i class="fas fa-pencil-ruler fa-3x mb-3 text-primary"></i>
-            <h5 class="card-title font-weight-bold">Interior Design</h5>
-            <p class="card-text text-muted">Personalized designs that reflect your story and lifestyle.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm text-center">
-          <div class="card-body">
-            <i class="fas fa-couch fa-3x mb-3 text-success"></i>
-            <h5 class="card-title font-weight-bold">Custom Furniture</h5>
-            <p class="card-text text-muted">Crafting functional and artistic pieces just for your space.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service 3 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm text-center">
-          <div class="card-body">
-            <i class="fas fa-home fa-3x mb-3 text-warning"></i>
-            <h5 class="card-title font-weight-bold">Home Decor Styling</h5>
-            <p class="card-text text-muted">Finishing touches that turn houses into homes with elegance.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service 4 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm text-center">
-          <div class="card-body">
-            <i class="fas fa-hammer fa-3x mb-3 text-danger"></i>
-            <h5 class="card-title font-weight-bold">Space Renovation</h5>
-            <p class="card-text text-muted">Transforming outdated spaces into modern and vibrant zones.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 
 </body>
+
 </html>

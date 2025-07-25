@@ -58,3 +58,164 @@
   margin: 20px auto;
 }
 
+/* About Us Section - Dark Beige Theme */
+.about-section {
+  background-color: #d8c7b8; /* Muted dark beige */
+  color: #2e2e2e;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+.about-section .section-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #3c2f2f;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-section .btn-dark-custom {
+  background-color: #3c2f2f;
+  color: #fff;
+  border: 2px solid #3c2f2f;
+  transition: all 0.3s ease;
+}
+
+.about-section .btn-dark-custom:hover {
+  background-color: transparent;
+  color: #3c2f2f;
+}
+
+.about-section .btn-outline-dark-custom {
+  background-color: transparent;
+  color: #3c2f2f;
+  border: 2px solid #3c2f2f;
+  transition: all 0.3s ease;
+}
+
+.about-section .btn-outline-dark-custom:hover {
+  background-color: #3c2f2f;
+  color: #fff;
+}
+
+.about-img {
+  height: 70vh;       /* Reduced from 85vh */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .about-img {
+    height: 50vh;
+  }
+}
+
+.services-section {
+  background-color: #f5f0eb;
+  color: #2e2e2e;
+}
+
+.services-section .section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #3c2f2f;
+}
+
+.service-card {
+  background-color: #fff8f3;
+  border: 1px solid #ddd;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-15px);
+}
+
+/* Custom dark theme buttons */
+.btn-dark-custom {
+  background-color: #3c2f2f;
+  color: #fff;
+  border: 2px solid #3c2f2f;
+  transition: all 0.3s ease;
+}
+
+.btn-dark-custom:hover {
+  background-color: transparent;
+  color: #3c2f2f;
+}
+
+.btn-outline-dark-custom {
+  background-color: transparent;
+  color: #3c2f2f;
+  border: 2px solid #3c2f2f;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark-custom:hover {
+  background-color: #3c2f2f;
+  color: #fff;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Services Section Styling */
+.services-section {
+  position: relative;
+  height: 45vh;
+  background: url('https://i.pinimg.com/1200x/d0/cf/6c/d0cf6c7fa7dafb758899cfb383a5ff5c.jpg') center center / cover no-repeat;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #2E2E2E;
+}
+
+.services-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(101, 67, 33, 0.5); /* Brown blur */
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.services-section .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+.service-card {
+  background-color: #d8c7b8;
+  padding: 20px;
+  border-radius: 15px;
+  height: 100%;
+  transition: transform 0.15s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background-color: #e5d6c6;
+}
+
+.service-card h4 {
+  font-weight: bold;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+}
+
+.service-card i {
+  color: #4b3621;
+}
