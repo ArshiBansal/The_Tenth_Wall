@@ -170,37 +170,37 @@
     <h2 class="section-heading">Our Projects</h2>
     <div class="projects-grid">
       <div class="project-tile">
-        <img src="img1.jpg" alt="Project 1">
+        <img src="https://i.pinimg.com/1200x/fe/d6/8b/fed68ba7fd344298abd3af78870f4dda.jpg" alt="Project 1">
         <div class="project-overlay">
           <h3>Interior Designing</h3>
           <a href="gallery.html">View More</a>
         </div>
       </div>
       <div class="project-tile">
-        <img src="img1.jpg" alt="Project 1">
+        <img src="https://i.pinimg.com/736x/0d/bb/54/0dbb544f5cde27096aef4480b0b3b467.jpg" alt="Project 1">
         <div class="project-overlay">
           <h3>Lighting</h3>
           <a href="gallery.html">View More</a>
         </div>
       </div>
       <div class="project-tile">
-        <img src="img1.jpg" alt="Project 1">
+        <img src="https://i.pinimg.com/1200x/77/3c/e4/773ce4a29439f236fe2be48fb0a066e9.jpg" alt="Project 1">
         <div class="project-overlay">
           <h3>Renovation & Remodeling</h3>
           <a href="gallery.html">View More</a>
         </div>
       </div>
       <div class="project-tile">
-        <img src="img1.jpg" alt="Project 1">
+        <img src="https://i.pinimg.com/1200x/a9/d6/a2/a9d6a2d93325a299d4caee482ae0d740.jpg" alt="Project 1">
         <div class="project-overlay">
           <h3>Space Planning</h3>
           <a href="gallery.html">View More</a>
         </div>
       </div>
       <div class="project-tile">
-        <img src="img1.jpg" alt="Project 1">
+        <img src="https://i.pinimg.com/736x/e1/64/6c/e1646c1111a96bf542cbfc76a62f020b.jpg" alt="Project 1">
         <div class="project-overlay">
-          <h3>Rennovation</h3>
+          <h3>Consultation</h3>
           <a href="gallery.html">View More</a>
         </div>
       </div>
@@ -208,44 +208,55 @@
   </section>
 
   <!-- How Do We Work Section -->
-  <section class="container-fluid work-process py-5"
-    style="height: 70vh; background: url('your-image.jpg') center center / cover no-repeat;">
-    <div class="container">
-      <h6 class="text-highlight">HOW DO WE WORK?</h6>
-      <h2 class="font-weight-bold mb-4">WE DESIGN FOR<br>YOUR SATISFACTION</h2>
-      <p class="mb-5">Our process blends creativity and practicality to ensure beautiful, personalized, and functional
-        spaces—every time.</p>
+  <section class="container-fluid work-process py-5 position-relative" style="height: 70vh; overflow: hidden; position: relative;">
+  <!-- Blurred Background Layer -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.pinimg.com/1200x/10/90/63/1090637e2901f16c307bfa8c1fad2bac.jpg') center center / cover no-repeat;
+    filter: blur(10px);
+    z-index: 0;">
+  </div>
 
-      <div class="row justify-content-center">
-        <!-- Step 1 -->
-        <div class="col-md-3 mb-4">
-          <div class="card step-card h-100 text-center p-3">
-            <h1 class="step-number">01</h1>
-            <h5 class="step-title">Concept</h5>
-            <p>We begin by understanding your lifestyle, goals, and inspiration to build a clear design direction.</p>
-          </div>
+  <!-- Foreground Content -->
+  <div class="container" style="position: relative; z-index: 2; color: whitesmoke;">
+    <h6 class="text-highlight">HOW DO WE WORK?</h6>
+    <h2 class="font-weight-bold mb-4">WE DESIGN FOR<br>YOUR SATISFACTION</h2>
+    <p class="mb-5">Our process blends creativity and practicality to ensure beautiful, personalized, and functional spaces—every time.</p>
+
+    <div class="row justify-content-center">
+      <!-- Step 1 -->
+      <div class="col-md-3 mb-4">
+        <div class="card text-center p-3" style="background-color: rgba(255,255,255,0.9); border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 100%;">
+          <h1 style="font-size: 2.5rem; color: #b08968; font-weight: bold;">01</h1>
+          <h5 style="font-weight: bold; color: #343a40;">Concept</h5>
+          <p style="color: #333;">We begin by understanding your lifestyle, goals, and inspiration to build a clear design direction.</p>
         </div>
+      </div>
 
-        <!-- Step 2 -->
-        <div class="col-md-3 mb-4">
-          <div class="card step-card h-100 text-center p-3">
-            <h1 class="step-number">02</h1>
-            <h5 class="step-title">Design</h5>
-            <p>Ideas are transformed into mood boards, layouts, and material palettes tailored to your taste.</p>
-          </div>
+      <!-- Step 2 -->
+      <div class="col-md-3 mb-4">
+        <div class="card text-center p-3" style="background-color: rgba(255,255,255,0.9); border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 100%;">
+          <h1 style="font-size: 2.5rem; color: #b08968; font-weight: bold;">02</h1>
+          <h5 style="font-weight: bold; color: #343a40;">Design</h5>
+          <p style="color: #333;">Ideas are transformed into mood boards, layouts, and material palettes tailored to your taste.</p>
         </div>
+      </div>
 
-        <!-- Step 3 -->
-        <div class="col-md-3 mb-4">
-          <div class="card step-card h-100 text-center p-3">
-            <h1 class="step-number">03</h1>
-            <h5 class="step-title">Development</h5>
-            <p>Our team refines, implements, and executes the vision—bringing your dream space to life.</p>
-          </div>
+      <!-- Step 3 -->
+      <div class="col-md-3 mb-4">
+        <div class="card text-center p-3" style="background-color: rgba(255,255,255,0.9); border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 100%;">
+          <h1 style="font-size: 2.5rem; color: #b08968; font-weight: bold;">03</h1>
+          <h5 style="font-weight: bold; color: #343a40;">Development</h5>
+          <p style="color: #333;">Our team refines, implements, and executes the vision—bringing your dream space to life.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Testimonial Section -->
   <section class="container-fluid testimonial-section py-5" style="background-color: #d8c7b8;">
