@@ -61,7 +61,7 @@
 .about-section {
   background-color: #d8c7b8;
   /* Muted dark beige */
-  color: #2e2e2e;
+  color: black;
   max-height: 80vh;
   overflow: hidden;
 }
@@ -70,7 +70,7 @@
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   font-size: 2.5rem;
-  color: #3c2f2f;
+  color: black;
 }
 
 .about-section p {
@@ -123,20 +123,20 @@
 .statistics-section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
-  color: #3e2f23;
+  color: black;
 }
 
 .statistics-section h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #3e2f23;
+  color: black;
   margin-bottom: 0.5rem;
 }
 
 .statistics-section p {
   font-size: 1rem;
   font-weight: 500;
-  color: #3e2f23;
+  color: black;
   margin: 0;
 }
 
@@ -161,7 +161,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 600;
-  color: #3c2f2f;
+  color: black;
 }
 
 .service-card {
@@ -212,7 +212,7 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  color: #2E2E2E;
+  color: black;
 }
 
 .services-section::before {
@@ -256,7 +256,7 @@ body {
 }
 
 .service-card i {
-  color: #4b3621;
+  color: black;
 }
 
 /* Projects Section */
@@ -264,13 +264,13 @@ body {
   background-color: #d8c7b8;
   padding: 60px 20px;
   font-family: 'Playfair Display', serif;
-  color: #2e2e2e;
+  color: black;
 }
 
 .projects-section .section-heading {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #3c2f2f;
+  color: black;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -363,7 +363,7 @@ body {
 }
 
 .process-step i {
-  color: #580F41; /* or any accent color */
+  color: black; /* or any accent color */
 }
 
 /* Font & General Theme */
@@ -371,7 +371,7 @@ body {
 .work-process {
   background-color: #d8c7b8;
   font-family: 'Playfair Display', serif;
-  color: #2c2c2c;
+  color: black;
 }
 
 .text-highlight {
@@ -397,7 +397,7 @@ body {
 /* Section colors and font */
 .work-process {
   font-family: 'Playfair Display', serif;
-  color: #2c2c2c;
+  color: black;
 }
 
 /* Highlighted section heading */
@@ -411,7 +411,7 @@ body {
 .work-process {
   background-color: #d8c7b8;
   font-family: 'Playfair Display', serif;
-  color: #2c2c2c;
+  color: black;
   position: relative;
   overflow: hidden;
 }

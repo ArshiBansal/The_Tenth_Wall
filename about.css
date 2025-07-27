@@ -54,7 +54,7 @@
 }
 
 .brand-story-section {
-    color: #4b3621;
+    color: black;
     background-color: #d8c7b8;
     font-family: 'Playfair Display', serif;
     font-size: medium;
@@ -75,7 +75,7 @@
 .philosophy-card {
     background-color: #ffffff;
     border: none;
-    color: #4b3621;
+    color: black;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -86,7 +86,7 @@
 
 .team-section {
     background-color: #d8c7b8;
-    color: #4b3621;
+    color: black;
 }
 
 .team-card {
@@ -126,11 +126,11 @@
 }
 
 .call-to-action-section h2 {
-    color: #4b3621;
+    color: black;
 }
 
 .call-to-action-section p {
-    color: #4b3621;
+    color: black;
 }
 
 .call-to-action-section .btn-dark {
@@ -142,7 +142,6 @@
 
 .call-to-action-section .btn-dark:hover {
     background-color: #d8c7b8;
-    ;
     color: #4b3621;
 }
 
