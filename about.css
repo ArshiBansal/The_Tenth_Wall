@@ -68,79 +68,80 @@
 }
 
 .design-philosophy-section {
-  background: #d8c7b8;
-  
+    background: #d8c7b8;
+
 }
 
 .philosophy-card {
-  background-color: #ffffff;
-  border: none;
-  color: #4b3621;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+    background-color: #ffffff;
+    border: none;
+    color: #4b3621;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 .philosophy-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .team-section {
-  background-color: #d8c7b8;
-  color: #4b3621;
+    background-color: #d8c7b8;
+    color: #4b3621;
 }
 
 .team-card {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 .team-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .values-impact-section {
-  background: url('https://i.pinimg.com/736x/9e/aa/b7/9eaab78367f9f3343830129fee35660c.jpg') center center/cover no-repeat;
-  background-attachment: fixed;
-  color: #fff;
-  height: 70vh;
+    background: url('https://i.pinimg.com/736x/9e/aa/b7/9eaab78367f9f3343830129fee35660c.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    height: 70vh;
 }
 
 .value-item h5 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
 }
 
 .value-item p {
-  font-size: 1rem;
-  color: #f8f8f8;
+    font-size: 1rem;
+    color: #f8f8f8;
 }
 
 .call-to-action-section {
-  background-color: #d8c7b8;
-  color: #4b3621;
-  background-attachment: fixed;
-  height: 45vh;
+    background-color: #d8c7b8;
+    color: #4b3621;
+    background-attachment: fixed;
+    height: 45vh;
 }
 
 .call-to-action-section h2 {
-  color: #4b3621;
+    color: #4b3621;
 }
 
 .call-to-action-section p {
-  color: #4b3621;
+    color: #4b3621;
 }
 
 .call-to-action-section .btn-dark {
-  background-color: #2c2c2c;
-  color: white;
-  border: none;
-  transition: 0.3s ease;
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    transition: 0.3s ease;
 }
 
 .call-to-action-section .btn-dark:hover {
-  background-color: #d8c7b8;;
-  color: #4b3621;
+    background-color: #d8c7b8;
+    ;
+    color: #4b3621;
 }
