@@ -1,0 +1,146 @@
+/* Transparent Navbar */
+.transparent-navbar {
+    background: rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease-in-out;
+}
+
+.transparent-navbar .nav-link {
+    color: #fff !important;
+    margin-left: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.transparent-navbar .nav-link:hover {
+    color: #d1cfcf !important;
+}
+
+.footer-section {
+    background-color: #523a28;
+    /* Dark cocoa brown */
+    font-family: 'Playfair Display', serif;
+    color: #3e2f23;
+}
+
+.footer-link {
+    color: #3e2f23;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #3e2f23;
+    /* Soft gold/beige hover */
+}
+
+.social-icon {
+    font-size: 1.3rem;
+    color: #3e2f23;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3e2f23;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('https://i.pinimg.com/1200x/ac/fd/5d/acfd5dc0f17a054754101ff12ae459e9.jpg') center center / cover no-repeat;
+    height: 65vh;
+    margin-bottom: 0;
+}
+
+.brand-story-section {
+    color: #4b3621;
+    background-color: #d8c7b8;
+    font-family: 'Playfair Display', serif;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.story-img {
+    max-height: 400px;
+    object-fit: cover;
+    font-family: 'Playfair Display', serif;
+}
+
+.design-philosophy-section {
+  background: #d8c7b8;
+  
+}
+
+.philosophy-card {
+  background-color: #ffffff;
+  border: none;
+  color: #4b3621;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-section {
+  background-color: #d8c7b8;
+  color: #4b3621;
+}
+
+.team-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.values-impact-section {
+  background: url('https://i.pinimg.com/736x/9e/aa/b7/9eaab78367f9f3343830129fee35660c.jpg') center center/cover no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  height: 70vh;
+}
+
+.value-item h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #f8f8f8;
+}
+
+.call-to-action-section {
+  background-color: #d8c7b8;
+  color: #4b3621;
+  background-attachment: fixed;
+  height: 45vh;
+}
+
+.call-to-action-section h2 {
+  color: #4b3621;
+}
+
+.call-to-action-section p {
+  color: #4b3621;
+}
+
+.call-to-action-section .btn-dark {
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.call-to-action-section .btn-dark:hover {
+  background-color: #d8c7b8;;
+  color: #4b3621;
+}
