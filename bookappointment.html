@@ -1,0 +1,49 @@
+<!-- bookappointment.html -->
+<div class="container">
+  <form>
+    <h5 class="mb-4 font-weight-bold">Book Your Interior Consultation</h5>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="clientName">Full Name</label>
+        <input type="text" class="form-control" id="clientName" placeholder="Your Name" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="clientEmail">Email</label>
+        <input type="email" class="form-control" id="clientEmail" placeholder="you@example.com" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="clientPhone">Phone Number</label>
+      <input type="tel" class="form-control" id="clientPhone" placeholder="123-456-7890" required>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="appointmentDate">Preferred Date</label>
+        <input type="date" class="form-control" id="appointmentDate" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="appointmentTime">Preferred Time</label>
+        <input type="time" class="form-control" id="appointmentTime" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="consultLocation">Consultation Location</label>
+      <select class="form-control" id="consultLocation" required>
+        <option selected disabled value="">Choose an option</option>
+        <option>At Our Studio</option>
+        <option>At Your Home</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="clientMessage">Brief About Your Space</label>
+      <textarea class="form-control" id="clientMessage" rows="3" placeholder="Tell us about your home, vision, or challenges..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-dark">Confirm Appointment</button>
+  </form>
+</div>

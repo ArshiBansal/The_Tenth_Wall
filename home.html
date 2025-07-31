@@ -10,7 +10,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
   <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <!-- Font & Icons -->
@@ -52,7 +60,10 @@
       <p class="lead">Elevating spaces through thoughtful interiors. The Tenth Wall brings your vision to life—artfully
         and uniquely.</p>
       <a href="#" class="btn btn-dark btn-lg mr-2">Find Services</a>
-      <a href="#" class="btn btn-outline-light btn-lg">Book Appointment</a>
+      <button type="button" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#appointmentModal">
+        Book Appointment
+      </button>
+
   </header>
 
   <!-- About Us Section -->
@@ -208,9 +219,10 @@
   </section>
 
   <!-- How Do We Work Section -->
-  <section class="container-fluid work-process py-5 position-relative" style="height: 70vh; overflow: hidden; position: relative;">
-  <!-- Blurred Background Layer -->
-  <div style="
+  <section class="container-fluid work-process py-5 position-relative"
+    style="height: 70vh; overflow: hidden; position: relative;">
+    <!-- Blurred Background Layer -->
+    <div style="
     position: absolute;
     top: 0;
     left: 0;
@@ -219,44 +231,51 @@
     background: url('https://i.pinimg.com/736x/0f/5c/d4/0f5cd4076551f7478d3be8fa32c26fec.jpg') center center / cover no-repeat;
     filter: blur(5px);
     z-index: 0;">
-  </div>
+    </div>
 
-  <!-- Foreground Content -->
-  <div class="container" style="position: relative; z-index: 2; color: whitesmoke;">
-    <h6 class="text-highlight">HOW DO WE WORK?</h6>
-    <h2 class="font-weight-bold mb-4">WE DESIGN FOR<br>YOUR SATISFACTION</h2>
-    <p class="mb-5">Our process blends creativity and practicality to ensure beautiful, personalized, and functional spaces—every time.</p>
+    <!-- Foreground Content -->
+    <div class="container" style="position: relative; z-index: 2; color: whitesmoke;">
+      <h6 class="text-highlight">HOW DO WE WORK?</h6>
+      <h2 class="font-weight-bold mb-4">WE DESIGN FOR<br>YOUR SATISFACTION</h2>
+      <p class="mb-5">Our process blends creativity and practicality to ensure beautiful, personalized, and functional
+        spaces—every time.</p>
 
-    <div class="row justify-content-center">
-      <!-- Step 1 -->
-      <div class="col-md-3 mb-4">
-        <div class="card text-center p-3" style="background-color: rgba(255,255,255,0.9); border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 100%;">
-          <h1 style="font-size: 2.5rem; color: #b08968; font-weight: bold;">01</h1>
-          <h5 style="font-weight: bold; color: #343a40;">Concept</h5>
-          <p style="color: #333;">We begin by understanding your lifestyle, goals, and inspiration to build a clear design direction.</p>
+      <div class="row justify-content-center">
+        <!-- Step 1 -->
+        <div class="col-md-3 mb-4">
+          <div class="card text-center p-3"
+            style="background-color: rgba(255,255,255,0.9); border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 100%;">
+            <h1 style="font-size: 2.5rem; color: #b08968; font-weight: bold;">01</h1>
+            <h5 style="font-weight: bold; color: #343a40;">Concept</h5>
+            <p style="color: #333;">We begin by understanding your lifestyle, goals, and inspiration to build a clear
+              design direction.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Step 2 -->
-      <div class="col-md-3 mb-4">
-        <div class="card text-center p-3" style="background-color: rgba(255,255,255,0.9); border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 100%;">
-          <h1 style="font-size: 2.5rem; color: #b08968; font-weight: bold;">02</h1>
-          <h5 style="font-weight: bold; color: #343a40;">Design</h5>
-          <p style="color: #333;">Ideas are transformed into mood boards, layouts, and material palettes tailored to your taste.</p>
+        <!-- Step 2 -->
+        <div class="col-md-3 mb-4">
+          <div class="card text-center p-3"
+            style="background-color: rgba(255,255,255,0.9); border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 100%;">
+            <h1 style="font-size: 2.5rem; color: #b08968; font-weight: bold;">02</h1>
+            <h5 style="font-weight: bold; color: #343a40;">Design</h5>
+            <p style="color: #333;">Ideas are transformed into mood boards, layouts, and material palettes tailored to
+              your taste.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Step 3 -->
-      <div class="col-md-3 mb-4">
-        <div class="card text-center p-3" style="background-color: rgba(255,255,255,0.9); border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 100%;">
-          <h1 style="font-size: 2.5rem; color: #b08968; font-weight: bold;">03</h1>
-          <h5 style="font-weight: bold; color: #343a40;">Development</h5>
-          <p style="color: #333;">Our team refines, implements, and executes the vision—bringing your dream space to life.</p>
+        <!-- Step 3 -->
+        <div class="col-md-3 mb-4">
+          <div class="card text-center p-3"
+            style="background-color: rgba(255,255,255,0.9); border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 100%;">
+            <h1 style="font-size: 2.5rem; color: #b08968; font-weight: bold;">03</h1>
+            <h5 style="font-weight: bold; color: #343a40;">Development</h5>
+            <p style="color: #333;">Our team refines, implements, and executes the vision—bringing your dream space to
+              life.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Testimonial Section -->
   <section class="container-fluid testimonial-section py-5" style="background-color: #d8c7b8;">
@@ -364,6 +383,31 @@
       </div>
     </div>
   </footer>
+  <!-- Appointment Modal -->
+  <div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="appointmentModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Appointment Form will be loaded here -->
+          <div id="appointmentFormContent">Loading form...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load appointment form content via jQuery -->
+  <script>
+    $('#appointmentModal').on('show.bs.modal', function () {
+      $('#appointmentFormContent').load('bookappointment.html');
+    });
+  </script>
 
 </body>
 
