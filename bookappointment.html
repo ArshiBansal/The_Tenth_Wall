@@ -1,49 +1,81 @@
 <!-- bookappointment.html -->
-<div class="container">
-  <form>
-    <h5 class="mb-4 font-weight-bold">Book Your Interior Consultation</h5>
+<form id="appointmentForm" action="#" method="post" novalidate>
+  <h5 class="mb-4">Book Your Interior Consultation</h5>
 
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="clientName">Full Name</label>
-        <input type="text" class="form-control" id="clientName" placeholder="Your Name" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="clientEmail">Email</label>
-        <input type="email" class="form-control" id="clientEmail" placeholder="you@example.com" required>
-      </div>
+  <!-- Full Name & Email -->
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="fullName">Full Name</label>
+      <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Full Name" pattern="[A-Za-z\s]+" title="Only alphabets allowed" required>
     </div>
-
-    <div class="form-group">
-      <label for="clientPhone">Phone Number</label>
-      <input type="tel" class="form-control" id="clientPhone" placeholder="123-456-7890" required>
+    <div class="form-group col-md-6">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="abc@xy.com" required>
     </div>
+  </div>
 
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="appointmentDate">Preferred Date</label>
-        <input type="date" class="form-control" id="appointmentDate" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="appointmentTime">Preferred Time</label>
-        <input type="time" class="form-control" id="appointmentTime" required>
-      </div>
+  <!-- Phone -->
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" class="form-control" placeholder="89357-81802" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" title="Enter 10 digit phone number" required>
+  </div>
+
+  <!-- Date and Time -->
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="date">Preferred Date</label>
+      <input type="date" class="form-control" id="date" name="date" required>
     </div>
-
-    <div class="form-group">
-      <label for="consultLocation">Consultation Location</label>
-      <select class="form-control" id="consultLocation" required>
-        <option selected disabled value="">Choose an option</option>
-        <option>At Our Studio</option>
-        <option>At Your Home</option>
-      </select>
+    <div class="form-group col-md-6">
+      <label for="time">Preferred Time</label>
+      <input type="time" class="form-control" id="time" name="time" required>
     </div>
+  </div>
 
-    <div class="form-group">
-      <label for="clientMessage">Brief About Your Space</label>
-      <textarea class="form-control" id="clientMessage" rows="3" placeholder="Tell us about your home, vision, or challenges..." required></textarea>
-    </div>
+  <!-- Location -->
+  <div class="form-group">
+    <label for="location">Consultation Location</label>
+    <select class="form-control" id="location" name="location" required>
+      <option value="" selected disabled>Choose an option</option>
+      <option value="home">At Your Home</option>
+      <option value="showroom">At our office</option>
+    </select>
+  </div>
 
-    <button type="submit" class="btn btn-dark">Confirm Appointment</button>
-  </form>
-</div>
+  <!-- Conditional Address -->
+  <div class="form-group d-none" id="addressGroup">
+    <label for="address">Enter Your Address</label>
+    <textarea class="form-control" id="address" name="address" rows="2" placeholder="House no., Street, City, ZIP"></textarea>
+  </div>
+
+  <!-- Brief -->
+  <div class="form-group">
+    <label for="brief">Brief About Your Space</label>
+    <textarea class="form-control" id="brief" name="brief" rows="3" placeholder="Tell us about your home, vision, or challenges..."></textarea>
+  </div>
+
+  <!-- Submit -->
+  <button type="submit" class="btn btn-dark">Confirm Appointment</button>
+</form>
+
+<!-- Script to show address if "At Your Home" is selected -->
+<script>
+  document.getElementById('location').addEventListener('change', function () {
+    const addressGroup = document.getElementById('addressGroup');
+    if (this.value === 'home') {
+      addressGroup.classList.remove('d-none');
+    } else {
+      addressGroup.classList.add('d-none');
+    }
+  });
+
+  // Optional: Prevent non-numeric input in phone field
+  document.getElementById('phone').addEventListener('input', function () {
+    this.value = this.value.replace(/[^0-9]/g, '');
+  });
+
+  // Optional: Prevent numeric input in name field
+  document.getElementById('fullName').addEventListener('input', function () {
+    this.value = this.value.replace(/[^a-zA-Z\s]/g, '');
+  });
+</script>
