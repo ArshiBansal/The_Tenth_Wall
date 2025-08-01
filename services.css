@@ -102,3 +102,33 @@
   margin-top: 10px;
   color: #333;
 }
+
+.process-step {
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+.process-step:hover {
+  transform: translateY(-5px);
+}
+
+.why-choose-us {
+  background: url('your-dark-styled-image.jpg') no-repeat center center/cover;
+  position: relative;
+}
+.why-choose-us::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.why-choose-us .container {
+  position: relative;
+  z-index: 2;
+}
+.choose-box {
+  transition: transform 0.3s ease;
+}
+.choose-box:hover {
+  transform: scale(1.05);
+}
