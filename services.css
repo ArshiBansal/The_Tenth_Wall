@@ -73,3 +73,32 @@
 .hero-intro-banner p {
   font-size: 1.25rem;
 }
+
+.service-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  transform: translateY(0);
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(88, 15, 65, 0.15);
+}
+
+.service-card i {
+  color: black;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover i {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.service-card h4 {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
