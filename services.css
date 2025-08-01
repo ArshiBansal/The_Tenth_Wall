@@ -47,7 +47,7 @@
 .hero-intro-banner {
   position: relative;
   height: 75vh;
-  background: url('../images/interior-banner.jpg') center center/cover no-repeat;
+  background: url('https://i.pinimg.com/1200x/ca/18/80/ca1880de5026e68c96c34bc1c4c8d7cc.jpg') center center/cover no-repeat;
 }
 
 .hero-intro-banner .hero-overlay {
