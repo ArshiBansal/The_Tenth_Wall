@@ -1,0 +1,75 @@
+/* Transparent Navbar */
+.transparent-navbar {
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease-in-out;
+}
+
+.transparent-navbar .nav-link {
+  color: #fff !important;
+  margin-left: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.transparent-navbar .nav-link:hover {
+  color: #d1cfcf !important;
+}
+
+.footer-section {
+  background-color: #523a28; /* Dark cocoa brown */
+  font-family: 'Playfair Display', serif;
+  color: #3e2f23;
+}
+
+.footer-link {
+  color: #3e2f23;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #3e2f23; /* Soft gold/beige hover */
+}
+
+.social-icon {
+  font-size: 1.3rem;
+  color: #3e2f23;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3e2f23;
+}
+
+.hero-intro-banner {
+  position: relative;
+  height: 75vh;
+  background: url('../images/interior-banner.jpg') center center/cover no-repeat;
+}
+
+.hero-intro-banner .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.hero-intro-banner .container {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero-intro-banner h1 {
+  font-size: 3rem;
+}
+
+.hero-intro-banner p {
+  font-size: 1.25rem;
+}
