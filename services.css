@@ -76,33 +76,62 @@
     font-size: 1.25rem;
 }
 
-.service-card {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    transition: all 0.4s ease;
-    transform: translateY(0);
-    cursor: pointer;
+/* Section container and heading */
+.service-details {
+  background-color: white;
 }
 
-.service-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 10px 30px rgba(88, 15, 65, 0.15);
+.service-details h2 {
+  color: black;
+  font-size: 2.4rem;
+  position: relative;
 }
 
-.service-card i {
-    color: black;
-    transition: transform 0.4s ease;
+.service-details h4 {
+  font-weight: 600;
+  color: black;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
 }
 
-.service-card:hover i {
-    transform: rotate(5deg) scale(1.1);
+.service-details h4:hover {
+  color: black;
 }
 
-.service-card h4 {
-    font-weight: 600;
-    margin-top: 10px;
-    color: #333;
+/* Paragraphs */
+.service-details p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 12px;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.service-details p:hover {
+  color: #222;
+  opacity: 1;
+}
+
+/* Images with zoom-in hover */
+.service-details img {
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-details img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional spacing tweaks */
+.service-details .row {
+  transition: transform 0.3s ease;
+}
+
+.service-details .row:hover {
+  transform: scale(1.005);
 }
 
 .process-step {
@@ -115,7 +144,7 @@
 }
 
 .why-choose-us {
-    background: url('your-dark-styled-image.jpg') no-repeat center center/cover;
+    background-color: white;
     position: relative;
 }
 
@@ -126,7 +155,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .why-choose-us .container {
@@ -140,4 +168,26 @@
 
 .choose-box:hover {
     transform: scale(1.05);
+}
+
+.choose-box {
+  background-color: #fff;
+  color: #000;
+  min-height: 280px; /* ensure equal height across cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s ease-in-out;
+}
+
+.choose-box:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* Optional: animate child text */
+.choose-box:hover h5,
+.choose-box:hover p {
+  color: #fff;
 }
