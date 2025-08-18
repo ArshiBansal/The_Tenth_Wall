@@ -143,62 +143,63 @@
     transform: translateY(-5px);
 }
 
+/* Why Choose Us section */
 .why-choose-us {
-    background-color: white;
-    position: relative;
-}
-
-.why-choose-us::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  background-color: #fff;
+  position: relative;
 }
 
 .why-choose-us .container {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
-.choose-box {
-    transition: transform 0.3s ease;
-}
-
-.choose-box:hover {
-    transform: scale(1.05);
-}
-
+/* Card styles */
 .choose-box {
   background-color: #fff;
   color: #000;
-  min-height: 280px; /* ensure equal height across cards */
+  min-height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
   transition: all 0.4s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
 }
 
+.choose-box i {
+  color: black;
+  font-size: 3rem;         /* large, visible icons */
+  margin-bottom: 15px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.choose-box h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.choose-box p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Hover effect */
 .choose-box:hover {
   background-color: #000;
   color: #fff;
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.05);
 }
 
-/* Optional: animate child text */
+.choose-box:hover i,
 .choose-box:hover h5,
 .choose-box:hover p {
   color: #fff;
 }
 
-/* Default icon color */
-.choose-box i {
-  color: black;
-  transition: color 0.3s ease;
-}
-
-/* On hover, icon turns white */
 .choose-box:hover i {
-  color: white;
+  font-size: 3.5rem;       /* icon grows slightly */
 }
