@@ -191,3 +191,14 @@
 .choose-box:hover p {
   color: #fff;
 }
+
+/* Default icon color */
+.choose-box i {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+/* On hover, icon turns white */
+.choose-box:hover i {
+  color: white;
+}
