@@ -1,79 +1,79 @@
 /* Transparent Navbar */
 .transparent-navbar {
-    background: rgba(0, 0, 0, 0.3);
-    transition: background 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease-in-out;
 }
 
 .transparent-navbar .nav-link {
-    color: #fff !important;
-    margin-left: 15px;
-    font-size: 1rem;
-    font-weight: 500;
+  color: #fff !important;
+  margin-left: 15px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .transparent-navbar .nav-link:hover {
-    color: #d1cfcf !important;
+  color: #d1cfcf !important;
 }
 
 .footer-section {
-    background-color: #523a28;
-    /* Dark cocoa brown */
-    font-family: 'Playfair Display', serif;
-    color: #3e2f23;
+  background-color: #523a28;
+  /* Dark cocoa brown */
+  font-family: 'Playfair Display', serif;
+  color: #3e2f23;
 }
 
 .footer-link {
-    color: #3e2f23;
-    text-decoration: none;
-    margin-bottom: 8px;
-    display: block;
-    transition: color 0.3s ease;
+  color: #3e2f23;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
+  transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #3e2f23;
-    /* Soft gold/beige hover */
+  color: #3e2f23;
+  /* Soft gold/beige hover */
 }
 
 .social-icon {
-    font-size: 1.3rem;
-    color: #3e2f23;
-    margin-right: 15px;
-    transition: color 0.3s ease;
+  font-size: 1.3rem;
+  color: #3e2f23;
+  margin-right: 15px;
+  transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #3e2f23;
+  color: #3e2f23;
 }
 
 .hero-intro-banner {
-    position: relative;
-    height: 75vh;
-    background: url('https://i.pinimg.com/1200x/ca/18/80/ca1880de5026e68c96c34bc1c4c8d7cc.jpg') center center/cover no-repeat;
+  position: relative;
+  height: 75vh;
+  background: url('https://i.pinimg.com/1200x/ca/18/80/ca1880de5026e68c96c34bc1c4c8d7cc.jpg') center center/cover no-repeat;
 }
 
 .hero-intro-banner .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.35);
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
 }
 
 .hero-intro-banner .container {
-    position: relative;
-    z-index: 2;
-    padding: 20px;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
 }
 
 .hero-intro-banner h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .hero-intro-banner p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 /* Section container and heading */
@@ -135,12 +135,12 @@
 }
 
 .process-step {
-    background-color: #fff;
-    transition: transform 0.3s ease;
+  background-color: #fff;
+  transition: transform 0.3s ease;
 }
 
 .process-step:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /* Why Choose Us section */
@@ -165,13 +165,14 @@
   text-align: center;
   transition: all 0.4s ease-in-out;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 2rem;
 }
 
 .choose-box i {
   color: black;
-  font-size: 3rem;         /* large, visible icons */
+  font-size: 3rem;
+  /* large, visible icons */
   margin-bottom: 15px;
   display: block;
   transition: all 0.3s ease-in-out;
@@ -201,5 +202,6 @@
 }
 
 .choose-box:hover i {
-  font-size: 3.5rem;       /* icon grows slightly */
+  font-size: 3.5rem;
+  /* icon grows slightly */
 }
